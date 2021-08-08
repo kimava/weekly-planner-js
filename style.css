@@ -12,7 +12,7 @@
   --font-medium: 2rem;
   --font-regular: 1.5rem;
   --font-small: 1.25rem;
-  --font-micro: 1rem;
+  --font-micro: 0.8rem;
 }
 
 * {
@@ -78,6 +78,11 @@ a:hover {
   right: 15px;
   font-size: var(--font-regular);
   color: var(--color-gray);
+  transition: all 300ms ease;
+}
+
+.change-bg i:hover {
+  transform: scale(1.2);
 }
 
 .content {
@@ -145,7 +150,8 @@ a:hover {
   bottom: 3em;
   width: 85%;
   font-size: var(--font-regular);
-  border: 0;
+  border: 1px solid var(--color-gray);
+  outline: none;
   pointer-events: none;
 }
 
@@ -214,6 +220,7 @@ a:hover {
 }
 
 .search__query {
+  margin-bottom: 1em;
   padding: 0.5em;
   width: 90%;
   font-size: var(--font-small);
@@ -226,16 +233,26 @@ a:hover {
 
 .search__results {
   height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   overflow-y: scroll;
 }
 
 .search__results img {
   width: 10rem;
   height: 5rem;
-  padding: 0.5em 0.5em 0.5em 0;
   object-fit: cover;
+}
+
+.search__results-item {
+  margin: 0 0.5em 1em 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .search__user {
   font-size: var(--font-micro);
+  color: var(--color-gray);
+  text-decoration: none;
 }

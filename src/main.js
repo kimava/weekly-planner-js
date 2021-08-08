@@ -40,12 +40,15 @@ function search(searchTerm) {
 function displayImgs(images) {
   imageSection.innerHTML = '';
   images.forEach((image) => {
+    let imageBox = document.createElement('div');
+    imageBox.setAttribute('class', 'search__results-item');
     let imageElement = document.createElement('img');
     imageElement.src = image.urls.regular;
     let userName = document.createElement('span');
     userName.innerHTML = `<a href="${image.user.links.html}" target="_blank" class="search__user">by ${image.user.name}</a>`;
-    imageSection.appendChild(imageElement);
-    imageSection.appendChild(userName);
+    imageBox.appendChild(imageElement);
+    imageBox.appendChild(userName);
+    imageSection.appendChild(imageBox);
   });
 }
 
