@@ -1,2 +1,4 @@
 # weekly-planner-js
-weekly planner
+
+##Overview
+https://grabit-weekly.netlify.app/
