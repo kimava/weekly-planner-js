@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grabbit - your weekly planner</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ef37c5eb4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="container">
+      <header class="change-bg">
+        <i class="fas fa-cog"></i>
+      </header>
+      <section class="content">
+        <div class="daily">
+          <input class="todo__input" type="text" maxlength="25" />
+        </div>
+        <ul class="weekly">
+          <li class="weekly__list" data-name="mon">
+            <h2 class="list__title">Mon <strong>.</strong></h2>
+            <p class="list__content"></p>
+          </li>
+          <li class="weekly__list" data-name="tue">
+            <h2 class="list__title">Tue <strong>.</strong></h2>
+            <p class="list__content"></p>
+          </li>
+          <li class="weekly__list" data-name="wed">
+            <h2 class="list__title">Wed <strong>.</strong></h2>
+            <p class="list__content"></p>
+          </li>
+          <li class="weekly__list" data-name="thu">
+            <h2 class="list__title">Thu <strong>.</strong></h2>
+            <p class="list__content"></p>
+          </li>
+          <li class="weekly__list" data-name="fri">
+            <h2 class="list__title">Fri <strong>.</strong></h2>
+            <p class="list__content"></p>
+          </li>
+          <li class="weekly__list" data-name="sat">
+            <h2 class="list__title">Sat <strong>.</strong></h2>
+            <p class="list__content"></p>
+          </li>
+          <li class="weekly__list" data-name="sun">
+            <h2 class="list__title">Sun <strong>.</strong></h2>
+            <p class="list__content"></p>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section class="pop-up pop-up--hide">
+      <i class="fas fa-times pop-up__delete"></i>
+      <form class="search">
+        <input class="search__query" type="search" />
+        <button class="search__btn" type="submit">Go</button>
+      </form>
+      <section class="search__results"></section>
+    </section>
+  </body>
+</html>
